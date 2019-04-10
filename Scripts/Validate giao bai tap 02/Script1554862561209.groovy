@@ -31,5 +31,27 @@ WebUI.click(findTestObject('Page_Hc liu - Sch Mm/a_Bi tp cui tun Ton 1 Tp 2'))
 
 WebUI.click(findTestObject('Page_Hc liu - Sch Mm/a_Giao bi tp'))
 
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Chn lp hc_ng-input'))
+
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_abc'))
+
+WebUI.setText(findTestObject('Page_Hc liu - Sch Mm/input_Thi gian lm bi (pht)_form-control ng-untouched ng-valid ng-dirty'), 
+    '15')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_S ln lm li_form-control ng-untouched ng-valid ng-dirty'), 
+    '1')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__form-control text-center bs-timepicker-field'), 
+    '20')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Ngy gi kt thc_form-control text-center bs-timepicker-field'), 
+    '09')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__form-control text-center bs-timepicker-field'), 
+    '30')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Thi gian lm bi (pht)_form-control ng-valid ng-dirty ng-touched'), 
+    '15')
+
 WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__btn btn-primary'))
 
