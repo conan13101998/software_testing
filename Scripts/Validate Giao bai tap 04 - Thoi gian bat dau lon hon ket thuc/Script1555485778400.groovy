@@ -9,7 +9,6 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
@@ -26,24 +25,30 @@ WebUI.setEncryptedText(findTestObject('Page Dang nhap Sach mem/input matkhu_user
 
 WebUI.click(findTestObject('Page Dang nhap Sach mem/Button submit'))
 
-WebUI.click(findTestObject('Page Hoc lieu sach mem/Link lop hoc cua toi'))
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/a_Lp 1'))
 
-WebUI.click(findTestObject('Page Danh sach lop/Button them lop'))
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/a_Bi tp cui tun Ton 1 Tp 1'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Tn_form-control ng-untouched ng-dirty ng-valid'), 
-    '<a href = "https://google.com"> TEST </a>')
+WebUI.click(findTestObject('Page_Hc liu - Sch Mm/a_Giao bi tp'))
 
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Chn khi lp'))
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Chn lp hc'))
 
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Lp 4'))
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_abc'))
 
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_M t_btn btn-primary'))
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Thi gian lm bi (pht)_form-control ng-untouched ng-valid ng-dirty'), 
+    '40')
 
-def modal = findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Modal them lop')
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_S ln lm li_form-control ng-untouched ng-valid ng-dirty'), 
+    '1')
 
-if (modal) {
-    KeywordUtil.markPassed('PASSED: Không được nhập đường dẫn')
-} else {
-    KeywordUtil.markFailed('Có thể nhập đường dẫn')
-}
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Ngy gi kt thc_form-control text-center bs-timepicker-field'), 
+    '14')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Ngy gi bt u_form-control text-center bs-timepicker-field'), 
+    '14')
+
+WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__form-control text-center bs-timepicker-field'), 
+    '10')
+
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__btn btn-primary'))
 

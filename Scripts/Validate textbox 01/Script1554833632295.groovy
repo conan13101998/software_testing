@@ -13,6 +13,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://hoclieu.sachmem.vn/folder/0')
+
+WebUI.click(findTestObject('Page Hoc lieu sach mem/Dang nhap'))
+
+WebUI.setText(findTestObject('Page Dang nhap Sach mem/input email_useremail'), 'xuananh.do1998@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Page Dang nhap Sach mem/input matkhu_userpassword'), 'utLJSzMnl2UDl4mdlA0eKA==')
+
+WebUI.click(findTestObject('Page Dang nhap Sach mem/Button submit'))
+
+WebUI.click(findTestObject('Page Hoc lieu sach mem/Link lop hoc cua toi'))
+
 WebUI.click(findTestObject('Page Danh sach lop/Button them lop'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Tn_form-control ng-untouched ng-dirty ng-valid'), 

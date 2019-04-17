@@ -25,9 +25,3 @@ WebUI.setEncryptedText(findTestObject('Page Dang nhap Sach mem/input matkhu_user
 
 WebUI.click(findTestObject('Page Dang nhap Sach mem/Button submit'))
 
-WebUI.click(findTestObject('Page Hoc lieu sach mem/Link lop hoc cua toi'))
-
-not_run: WebUI.click(findTestObject('Page Danh sach lop/Link Lop 12A'))
-
-not_run: WebUI.click(findTestObject('Page Lop 12A/Cham diem bai 2'))
-

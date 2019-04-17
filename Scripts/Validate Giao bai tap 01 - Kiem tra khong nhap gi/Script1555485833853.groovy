@@ -9,7 +9,6 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
@@ -26,24 +25,11 @@ WebUI.setEncryptedText(findTestObject('Page Dang nhap Sach mem/input matkhu_user
 
 WebUI.click(findTestObject('Page Dang nhap Sach mem/Button submit'))
 
-WebUI.click(findTestObject('Page Hoc lieu sach mem/Link lop hoc cua toi'))
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/a_Lp 1'))
 
-WebUI.click(findTestObject('Page Danh sach lop/Button them lop'))
+WebUI.click(findTestObject('Page_Hc liu - Sch Mm/a_Bi tp cui tun Ton 1 Tp 2'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_Tn_form-control ng-untouched ng-dirty ng-valid'), 
-    '<a href = "https://google.com"> TEST </a>')
+WebUI.click(findTestObject('Page_Hc liu - Sch Mm/a_Giao bi tp'))
 
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Chn khi lp'))
-
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Lp 4'))
-
-WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input_M t_btn btn-primary'))
-
-def modal = findTestObject('Object Repository/Page_Hc liu - Sch Mm/div_Modal them lop')
-
-if (modal) {
-    KeywordUtil.markPassed('PASSED: Không được nhập đường dẫn')
-} else {
-    KeywordUtil.markFailed('Có thể nhập đường dẫn')
-}
+WebUI.click(findTestObject('Object Repository/Page_Hc liu - Sch Mm/input__btn btn-primary'))
 
